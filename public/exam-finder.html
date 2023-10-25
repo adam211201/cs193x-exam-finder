@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Exam Finder</title>
+
+    <link href="/css/index.css" rel="stylesheet" />
+    <link href="/css/exam-finder.css" rel="stylesheet" />
+
+    <!-- These two lines provide automatic page and style reloading when files change. -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/lib/client/updater.js" defer></script>
+    <script src="https://kit.fontawesome.com/8619330d96.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js" integrity="sha512-qa1o08MA0596eSNsnkRv5vuGloSKUhY09O31MY2OJpODjUVlaL0GOJJcyt7J7Z61FiEgHMgBkH04ZJ+vcuLs/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/utils/pdf-init.js" type="module"></script>
+    <script src="/js/exam-finder.js" type="module"></script>
+  </head>
+  <body>
+    <section id="input-panel">
+      <nav id="navbar">
+        <h1>Exam Finder</h1>
+        <ul>
+          <li><a href="/favourites.html">Favourites</a></li>
+          <li><a href="/report-error.html">Report Error</a></li>
+          <li><a id="exam-finder-sign-out" href="/">Sign Out</a></li>
+        </ul>
+      </nav>
+
+      <form id="exam-finder">
+        <select name="language">
+          <option value="eng" selected>English</option>
+          <option value="gae">Irish</option>
+        </select>
+        <select name="certificate">
+          <option value="lc" selected>Leaving Certificate</option>
+          <option value="jc" disabled>Junior Certificate</option>
+        </select>
+        <select name="level">
+          <option value="hl" selected>Higher Level</option>
+          <option value="ol">Ordinary Level</option>
+        </select>
+        <select name="subject">
+          <option value="economics" selected>Economics</option>
+          <option value="latin">Latin</option>
+          <option value="physics">Physics</option>
+        </select>
+        <select name="year">
+          <option value="2019" selected>2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+        </select>
+      </form>
+
+      <footer id="footer">
+        Made with &nbsp;<i class="fas fa-heart"></i>&nbsp; by Adam Barry
+      </footer>
+    </section>
+
+    <section id="exam-panel">
+      <div id="exam-panel-links"></div>
+
+      <!-- This is commented out because of the issue with pdf.js, but if the web app was hosted it would work. -->
+      <!-- <canvas id="pdf-exam-viewer"></canvas> -->
+    </section>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+/* Report Error */
+
+#report-error button {
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+#report-error-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

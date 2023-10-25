@@ -1,0 +1,15 @@
+/* Page */
+
+.page-body {
+  justify-content: center;
+}
+
+.page-main {
+  width: 14rem;
+}
+
+/* Login */
+
+#login .submit {
+  cursor: pointer;
+}

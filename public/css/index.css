@@ -1,0 +1,65 @@
+/* Base Styles */
+
+:root {
+  box-sizing: border-box;
+  font-size: 16px;
+  --primary-colour: #8C1515;
+  --black: #000000;
+  --white: #FFFFFF;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+}
+
+button {
+  color: var(--white);
+  background-color: var(--primary-colour);
+  border: 1px solid var(--primary-colour);
+}
+
+i {
+  color: var(--primary-colour);
+}
+
+a {
+  color: var(--text-colour);
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:visited {
+  color: var(--primary-colour);
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Page */
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-error, .page-form > * {
+  margin: 0.4rem;
+  width: 100%;
+}
+
+.page-form > textarea {
+  resize: none;
+  height: 6rem;
+}

@@ -1,0 +1,69 @@
+/* Base Styles */
+
+body {
+  display: flex;
+}
+
+/* Input Panel */
+
+#input-panel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0.5rem 2rem;
+}
+
+/* Navbar */
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+#navbar > ul > li {
+  margin: 0 0.4rem;
+}
+
+/* Exam Finder */
+
+#exam-finder {
+  display: flex;
+  flex-direction: column;
+}
+
+#exam-finder > * {
+  padding: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+/* Footer */
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Exam Panel */
+
+#exam-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border-left: 1px solid var(--black);
+  padding: 0.5rem 2rem;
+}
+
+#pdf-exam-viewer {
+  background-color: var(--primary-colour);
+}
